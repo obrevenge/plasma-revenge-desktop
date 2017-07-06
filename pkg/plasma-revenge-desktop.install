@@ -13,6 +13,7 @@ post_install() {
          rm -rf /etc/skel/
          \cp -r /etc/skel_new/. /etc/skel
 	fi
+	cp /etc/skel/.config/icon/revenge_logo.svg /usr/share/about-distro/archlinux-logo.svg
 }
 
 post_upgrade() {
